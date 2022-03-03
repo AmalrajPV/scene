@@ -35,7 +35,7 @@ canvas.create_polygon(0, 549, 58, 558, 68, 546, 66, 560, 73, 553, 73, 566, 111, 
                       447, 547, 500, 524, 500, 600, 0, 600, fill="lightblue", outline="lightblue")
 canvas.create_polygon(0, 550, 58, 558, 68, 546, 66, 560, 73, 553, 73, 566, 93, 571, 0, 600, fill="skyblue",
                       outline="skyblue")
-canvas.create_oval(160, 100, 230, 170, fill="white", outline="white")
+canvas.create_oval(160, 100, 230, 170, fill="lightyellow", outline="white")
 
 canvas.create_oval(30, 180, 70, 160, fill="white", outline="white")
 canvas.create_oval(80, 180, 120, 160, fill="white", outline="white")
@@ -48,5 +48,17 @@ canvas.create_oval(260, 180, 310, 215, fill="white", outline="white")
 canvas.create_oval(330, 110, 380, 90, fill="white", outline="white")
 canvas.create_oval(390, 110, 440, 90, fill="white", outline="white")
 canvas.create_oval(360, 80, 410, 115, fill="white", outline="white")
+
+canvas.create_line(382, 486, 382, 600, fill="brown", width=15)
+canvas.create_polygon(334, 521, 434, 521, 384, 439, fill="green", outline="green")
+canvas.create_polygon(334, 500, 434, 500, 384, 418, fill="green", outline="green")
+canvas.create_polygon(334, 480, 434, 480, 384, 398, fill="green", outline="green")
+canvas.create_polygon(334, 460, 434, 460, 384, 378, fill="green", outline="green")
+
+
+def pos(e):
+    print(e.x, e.y)
+
+root.bind('<Button-1>', pos)
 
 root.mainloop()
